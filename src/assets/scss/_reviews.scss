@@ -1,0 +1,143 @@
+// Global Variables
+$primary-color: #1d72b8; // Blue
+$secondary-color: #444; // Dark gray
+$light-gray: #F7F7F7; // Light gray background
+$white: #ffffff;
+$border-radius: 8px;
+
+
+
+// Body and Basic Layout
+// body {
+
+//   margin: 0;
+//   background-color: $light-gray;
+
+// }
+
+.reviews-container {
+
+  margin: 0 auto;
+ margin-top: 50px;
+  border-radius: $border-radius;
+
+}
+
+.reviews-header {
+  text-align: center;
+//   font-family: $heading-font;
+  font-size: 2.2rem;
+  color: $primary-color;
+  margin-bottom: 40px;
+}
+
+.item-container {
+//   margin-bottom: 20px;
+//   padding: 20px;
+
+  border-radius: $border-radius;
+
+  .reviews-section {
+    margin-top: 20px;
+    background-color: $light-gray;
+    padding: 20px;
+  }
+
+  .reviews-title {
+    font-size: 1.5rem;
+    color: $primary-color;
+    margin-bottom: 15px;
+  }
+
+  .reviews-list {
+    list-style: none;
+    padding: 0;
+
+    .review-item {
+    //   padding: 20px;
+    //   margin-bottom: 20px;
+   
+      border-radius: $border-radius;
+    
+     
+     
+      .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .reviewer-initials {
+          color: $theme-color;
+          padding: 5px 10px;
+          border-radius: 50%;
+          font-weight: bold;
+          font-size: 1rem;
+        }
+
+        .review-date {
+          font-size: 0.9rem;
+          color: #aaa;
+        }
+      }
+
+      .review-rating {
+        margin: 10px 0;
+        .star {
+          font-size: 1.5rem;
+          color: #ddd;
+        }
+
+        .filled {
+          color: #FFC107;
+        }
+      }
+
+      .review-comment {
+        font-size: 1rem;
+        color: $secondary-color;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .no-reviews {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #aaa;
+    font-style: italic;
+  }
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: $primary-color;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+// Responsive Layouts
+@media (max-width: 768px) {
+
+
+  .reviews-header {
+    font-size: 1.8rem;
+  }
+
+  .review-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+
+
+  .reviews-header {
+    font-size: 1.6rem;
+  }
+
+  .review-item {
+    padding: 10px;
+  }
+}
